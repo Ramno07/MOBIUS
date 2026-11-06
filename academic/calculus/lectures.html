@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculus | Lectures | Mobius</title>
+    <meta name="description" content="Complete Calculus lecture courses and visual series, sorted from Beginner to Extreme, with a player built in." />
+    <link rel="canonical" href="https://mobius-physics.pages.dev/academic/calculus/lectures" />
+    <meta property="og:title" content="Calculus | Lectures | Mobius" />
+    <meta property="og:description" content="Complete Calculus lecture courses and visual series, sorted from Beginner to Extreme, with a player built in." />
+    <meta property="og:image" content="https://mobius-physics.pages.dev/assets/img/og-cover.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mobius-physics.pages.dev/academic/calculus/lectures" />
+    <meta property="og:site_name" content="Mobius | موبيوس" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#d5b06a" />
+    <link rel="icon" href="../../assets/img/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="../../site.webmanifest" />
+    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("mobius-mode");l=localStorage.getItem("mobius-lang")}catch(e){}if(t!=="dark"&&t!=="light"){try{t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}catch(e){t="light"}}d.setAttribute("data-theme",t);if(l==="ar"||l==="ku"){d.setAttribute("data-lang",l);d.lang=l;d.dir="rtl";d.classList.add("i18n-wait");setTimeout(function(){d.classList.remove("i18n-wait")},2500)}})();</script>
+    <link rel="preload" href="../../assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../../assets/fonts/onest.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../../assets/css/style.css?v=23e223b0b5" />
+    <link rel="stylesheet" href="../../assets/css/academic.css?v=23e223b0b5" />
+    <script src="../../assets/js/scenes.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/i18n.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/data/search-index.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/site.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/lectures.js?v=23e223b0b5" defer></script>
+    <script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":".book, .bp-btn, [download], [target=_blank]"}}]},"eagerness":"moderate"}]}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="../../index.html" aria-label="Mobius home">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="8.5" fill="#f0b44a" /><ellipse cx="20" cy="20" rx="17" ry="5.6" fill="none" stroke="#f4efe4" stroke-opacity=".85" stroke-width="1.5" transform="rotate(-22 20 20)" /></svg>
+          <span class="brand-name">Mobius</span>
+          <span class="brand-ar" lang="ar">موبيوس</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="../../academic.html" aria-current="page">Academic</a>
+          <a href="../../pop-science.html">Pop Science</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <div class="subject-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span aria-hidden="true">/</span><a href="../../academic.html">Academic</a><span aria-hidden="true">/</span><a href="../calculus.html">Calculus</a></nav>
+        <h1>Calculus</h1>
+        <p class="figure-cap">&int;<sub>a</sub><sup>b</sup> f&prime;(x) dx = f(b) &minus; f(a)</p>
+      </div>
+      <div class="banner banner--compact" data-pointer data-hint>
+        <canvas data-anim="calculus" aria-label="Area and slope of the same curve." role="img"></canvas>
+      </div>
+      <nav class="subject-tabs" aria-label="Calculus"><a class="subject-tab" href="../../math/calculus.html"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 9.5h9.5a3 3 0 0 1 3 3V39a3 3 0 0 0-3-3H9z"/><path d="M39 9.5h-9.5a3 3 0 0 0-3 3V39a3 3 0 0 1 3-3H39z"/><path d="M13 16h4.5M13 21h4.5M30.5 16H35M30.5 21H35"/></svg><span data-i18n>Books</span><span class="n">7</span></a><a class="subject-tab" href="lectures.html" aria-current="page"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6.5" y="10.5" width="35" height="23" rx="3"/><path d="m21 17 8 5-8 5z" class="fill"/><path d="M16 39.5h16M24 33.5v6"/></svg><span data-i18n>Lectures</span><span class="n">9</span></a></nav>
+
+      <div class="filters" data-filter-for="courses">
+        <div class="pills" role="group" aria-label="Show lectures by level"><button type="button" class="pill pill-all" data-level="" aria-pressed="true"><span class="planet" aria-hidden="true"></span><span class="label">All</span><span class="n">9</span></button><button type="button" class="pill lv-beginner" data-level="beginner" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Beginner</span><span class="n">2</span></button><button type="button" class="pill lv-easy" data-level="easy" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Easy</span><span class="n">2</span></button><button type="button" class="pill lv-medium" data-level="medium" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Medium</span><span class="n">3</span></button><button type="button" class="pill lv-hard" data-level="hard" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Hard</span><span class="n">1</span></button><button type="button" class="pill lv-extreme" data-level="extreme" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Extreme</span><span class="n">1</span></button></div>
+        <div class="seg" role="group" aria-label="Show lectures by approach"><button type="button" class="seg-btn" data-cat="" aria-pressed="true"><span data-i18n>All approaches</span></button><button type="button" class="seg-btn seg-academic" data-cat="academic" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span><span class="n">7</span></button><button type="button" class="seg-btn seg-conceptual" data-cat="conceptual" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span><span class="n">2</span></button></div>
+      </div>
+      <dl class="legend">
+        <div><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><dd data-i18n>Formal university courses: derivations, worked problems and exercises.</dd></div>
+        <div><span class="cat cat-conceptual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span></span><dd data-i18n>Visual, intuitive explanations that build understanding.</dd></div>
+      </dl>
+
+      <div class="lecture-shelves">
+        <section class="shelf lecture-shelf lv-beginner" data-group="beginner" aria-labelledby="lec-beginner">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-beginner">Beginner</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="beginner" data-cat="conceptual">
+              <a class="course lv-beginner" href="../../lectures/3blue1brown-essence-of-calculus.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring is-on" cx="160" cy="90" r="39"/><circle class="cv-ring is-out" cx="160" cy="90" r="56"/><circle class="cv-ring is-out" cx="160" cy="90" r="73"/><circle class="cv-ring is-out" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="145.4" cy="53.8" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">12</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Essence of Calculus</span>
+                  <span class="course-by">Grant Sanderson <span class="course-chan">· 3Blue1Brown</span></span>
+                  <span class="course-sum"><span data-l="en">Derivatives, integrals, limits and Taylor series, shown visually so that you could have discovered them yourself.</span><span data-l="ar" lang="ar" dir="rtl">المشتقات والتكاملات والنهايات ومتسلسلات تايلور، معروضة بصريًا حتى تشعر أنك كنت ستكتشفها بنفسك.</span><span data-l="ku" lang="ku" dir="rtl">دیریڤاتیڤ، ئینتیگرال، سنوور و زنجیرێن تایلەری، ب شێوەیەکێ دیتنی کو تو هەست بکەی تە ب خۆ دا ئەو دیتبان.</span></span>
+                  <span class="course-badges"><span class="cat cat-conceptual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span></span><span class="course-len"><span class="n">3.2</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="beginner" data-cat="conceptual">
+              <a class="course lv-beginner" href="../../lectures/mit-highlights-of-calculus.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring is-on" cx="160" cy="90" r="39"/><circle class="cv-ring is-out" cx="160" cy="90" r="56"/><circle class="cv-ring is-out" cx="160" cy="90" r="73"/><circle class="cv-ring is-out" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="129.3" cy="66.0" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">18</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Highlights of Calculus</span>
+                  <span class="course-by">Gilbert Strang <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">Short lectures on the big ideas: what derivatives and integrals mean, exponential growth, and why calculus matters.</span><span data-l="ar" lang="ar" dir="rtl">محاضرات قصيرة عن الأفكار الكبرى: معنى المشتقات والتكاملات، والنمو الأسي، ولماذا يهمّنا التفاضل والتكامل.</span><span data-l="ku" lang="ku" dir="rtl">وانەیێن کورت ل سەر بیرۆکێن مەزن: واتایا دیریڤاتیڤ و ئینتیگرالان، گەشەیا تەوانی، و بۆچی کالکولەس گرنگە.</span></span>
+                  <span class="course-badges"><span class="cat cat-conceptual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span></span><span class="course-len"><span class="n">9.8</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-easy" data-group="easy" aria-labelledby="lec-easy">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-easy">Easy</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="easy" data-cat="academic">
+              <a class="course lv-easy" href="../../lectures/professor-leonard-calculus-1.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring is-on" cx="0" cy="90" r="56"/><circle class="cv-ring is-out" cx="0" cy="90" r="73"/><circle class="cv-ring is-out" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="25.4" cy="40.1" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">32</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Calculus 1</span>
+                  <span class="course-by">Professor Leonard</span>
+                  <span class="course-sum"><span data-l="en">Full-length lectures: limits, derivatives and their techniques, applications of derivatives, and an introduction to integrals.</span><span data-l="ar" lang="ar" dir="rtl">محاضرات كاملة الطول: النهايات، والمشتقات وطرقها، وتطبيقات المشتقات، ومدخل إلى التكاملات.</span><span data-l="ku" lang="ku" dir="rtl">وانەیێن درێژ و تەمام: سنوور، دیریڤاتیڤ و ڕێکێن وان، بکارئینانێن دیریڤاتیڤان، و دەستپێکەک بۆ ئینتیگرالان.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">45</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="easy" data-cat="academic">
+              <a class="course lv-easy" href="../../lectures/mit-18-01-single-variable-calculus.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring is-on" cx="160" cy="90" r="56"/><circle class="cv-ring is-out" cx="160" cy="90" r="73"/><circle class="cv-ring is-out" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="117.7" cy="53.3" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">35</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 18.01 Single Variable Calculus</span>
+                  <span class="course-by">David Jerison <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">MIT&#x27;s first calculus course: differentiation and integration of functions of one variable, with applications.</span><span data-l="ar" lang="ar" dir="rtl">أول مقرر تفاضل وتكامل في MIT: اشتقاق دوال المتغير الواحد وتكاملها، مع التطبيقات.</span><span data-l="ku" lang="ku" dir="rtl">کۆرسا ئێکێ یا کالکولەسێ ل MIT: دیریڤاتیڤ و ئینتیگرالا فەنکشنێن ئێک گوهۆڕەری، دگەل بکارئینانان.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">29</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-medium" data-group="medium" aria-labelledby="lec-medium">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-medium">Medium</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="medium" data-cat="academic">
+              <a class="course lv-medium" href="../../lectures/professor-leonard-calculus-2.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring" cx="160" cy="90" r="56"/><circle class="cv-ring is-on" cx="160" cy="90" r="73"/><circle class="cv-ring is-out" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="106.6" cy="40.2" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">27</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Calculus 2</span>
+                  <span class="course-by">Professor Leonard</span>
+                  <span class="course-sum"><span data-l="en">Logarithmic and exponential functions, techniques of integration, sequences and series, and calculus in polar coordinates.</span><span data-l="ar" lang="ar" dir="rtl">الدوال اللوغاريتمية والأسية، وطرق التكامل، والمتتاليات والمتسلسلات، والتفاضل والتكامل في الإحداثيات القطبية.</span><span data-l="ku" lang="ku" dir="rtl">فەنکشنێن لۆگاریتمی و تەوانی، ڕێکێن ئینتیگرالێ، ڕێزبەند و زنجیرە، و کالکولەس د کۆئۆردیناتێن جەمسەری دا.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">50</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="medium" data-cat="academic">
+              <a class="course lv-medium" href="../../lectures/professor-leonard-calculus-3.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring" cx="160" cy="90" r="56"/><circle class="cv-ring is-on" cx="160" cy="90" r="73"/><circle class="cv-ring is-out" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="113.1" cy="34.1" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">34</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Calculus 3</span>
+                  <span class="course-by">Professor Leonard</span>
+                  <span class="course-sum"><span data-l="en">Vectors in 2-D and 3-D, vector functions, partial derivatives, multiple integrals and vector fields up to Stokes&#x27; theorem.</span><span data-l="ar" lang="ar" dir="rtl">المتجهات في بعدين وثلاثة، والدوال المتجهة، والمشتقات الجزئية، والتكاملات المتعددة، والحقول المتجهة حتى مبرهنة ستوكس.</span><span data-l="ku" lang="ku" dir="rtl">ڤێکتەر د دوو و سێ ڕەهەندان دا، فەنکشنێن ڤێکتەری، دیریڤاتیڤێن پارچەیی، ئینتیگرالێن پرژمار و مەیدانێن ڤێکتەری هەتا تیۆرەما ستۆکسی.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">75</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="medium" data-cat="academic">
+              <a class="course lv-medium" href="../../lectures/mit-18-02-multivariable-calculus.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring is-on" cx="0" cy="90" r="73"/><circle class="cv-ring is-out" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="68.2" cy="63.8" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">35</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 18.02 Multivariable Calculus</span>
+                  <span class="course-by">Denis Auroux <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">Vectors and matrices, partial derivatives, double and triple integrals, and vector calculus in two and three dimensions.</span><span data-l="ar" lang="ar" dir="rtl">المتجهات والمصفوفات، والمشتقات الجزئية، والتكاملات الثنائية والثلاثية، وحساب المتجهات في بعدين وثلاثة.</span><span data-l="ku" lang="ku" dir="rtl">ڤێکتەر و ماتریکس، دیریڤاتیڤێن پارچەیی، ئینتیگرالێن دووجار و سێجار، و کالکولەسا ڤێکتەران د دوو و سێ ڕەهەندان دا.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">28</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-hard" data-group="hard" aria-labelledby="lec-hard">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-hard">Hard</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="hard" data-cat="academic">
+              <a class="course lv-hard" href="../../lectures/mit-18-100a-real-analysis.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring" cx="0" cy="90" r="73"/><circle class="cv-ring is-on" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="84.0" cy="57.7" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">25</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 18.100A Real Analysis</span>
+                  <span class="course-by">Casey Rodriguez <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">Calculus made rigorous: the real numbers, sequences and series, continuity, differentiation and the Riemann integral, with proofs.</span><span data-l="ar" lang="ar" dir="rtl">التفاضل والتكامل بصرامة: الأعداد الحقيقية، والمتتاليات والمتسلسلات، والاتصال، والاشتقاق، وتكامل ريمان، مع البراهين.</span><span data-l="ku" lang="ku" dir="rtl">کالکولەس ب هشکی: ژمارێن ڕاستەقینە، ڕێزبەند و زنجیرە، بەردەوامی، دیریڤاتیڤ و ئینتیگرالا ڕیمانی، دگەل سەلماندنان.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">30</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-extreme" data-group="extreme" aria-labelledby="lec-extreme">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-extreme">Extreme</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="extreme" data-cat="academic">
+              <a class="course lv-extreme" href="../../lectures/mit-18-102-introduction-to-functional-analysis.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring" cx="160" cy="90" r="56"/><circle class="cv-ring" cx="160" cy="90" r="73"/><circle class="cv-ring" cx="160" cy="90" r="90"/><circle class="cv-ring is-on" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="95.6" cy="4.5" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">23</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 18.102 Introduction to Functional Analysis</span>
+                  <span class="course-by">Casey Rodriguez <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">Banach and Hilbert spaces, bounded operators, Lebesgue integration and spectral theory: the analysis behind quantum mechanics.</span><span data-l="ar" lang="ar" dir="rtl">فضاءات باناخ وهيلبرت، والمؤثرات المحدودة، وتكامل لوبيغ، والنظرية الطيفية: التحليل الذي تقوم عليه ميكانيكا الكم.</span><span data-l="ku" lang="ku" dir="rtl">فەزایێن باناخ و هیلبێرتی، ئۆپەراتۆرێن سنووردار، ئینتیگرالا لێبێگی و تیۆریا سپێکتری: ئەو شیکاریا میکانیکا کوانتەمی ل سەر ڕاوەستیای.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">30</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <p class="filter-empty" hidden data-i18n>No lectures match these filters.</p>
+      <p class="source-note" data-i18n>Videos are hosted on YouTube and belong to their creators. Nothing is loaded from YouTube until you press play.</p>
+      <div class="page-end"></div>
+    </main>
+        <footer class="site-footer">
+          <div class="wrap">
+            <div class="footer-grid">
+              <p class="footer-about">
+                <strong>Mobius <span lang="ar">موبيوس</span></strong>
+                A free library for physics and maths students: trusted books and
+                full lecture courses, each placed on five levels from Beginner to
+                Extreme.
+              </p>
+              <div>
+                <h2 id="footer-credits" style="font-weight: 900">Credits:</h2>
+                <dl class="credits" aria-labelledby="footer-credits">
+                  <div>
+                    <dt>Founder &amp; Designer</dt>
+                    <a href="https://www.instagram.com/____wasser____/" rel="noopener" target="_blank">@ZHEHAT</a>
+                  </div>
+                  <div>
+                    <dt>Developer</dt>
+                    <a href="https://www.instagram.com/_.ramn.__/" rel="noopener" target="_blank">@RAMN</a>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="footer-base">
+              <p>&copy; 2026 Mobius</p>
+              <nav class="footer-legal" aria-label="Legal">
+                <a href="../../feedback.html">Feedback</a>
+                <a href="../../privacy.html">Privacy</a>
+                <a href="../../terms.html">Terms</a>
+                <a href="https://www.instagram.com/mobius.sci/" rel="noopener" target="_blank">Instagram</a>
+              </nav>
+              <p>Book covers belong to their publishers. Videos belong to their creators.</p>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>

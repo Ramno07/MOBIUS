@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thermodynamics &amp; Statistical Mechanics | Lectures | Mobius</title>
+    <meta name="description" content="Complete Thermodynamics &amp; Statistical Mechanics lecture courses and visual series, sorted from Beginner to Extreme, with a player built in." />
+    <link rel="canonical" href="https://mobius-physics.pages.dev/academic/thermodynamics/lectures" />
+    <meta property="og:title" content="Thermodynamics &amp; Statistical Mechanics | Lectures | Mobius" />
+    <meta property="og:description" content="Complete Thermodynamics &amp; Statistical Mechanics lecture courses and visual series, sorted from Beginner to Extreme, with a player built in." />
+    <meta property="og:image" content="https://mobius-physics.pages.dev/assets/img/og-cover.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mobius-physics.pages.dev/academic/thermodynamics/lectures" />
+    <meta property="og:site_name" content="Mobius | موبيوس" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#d5b06a" />
+    <link rel="icon" href="../../assets/img/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="../../site.webmanifest" />
+    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("mobius-mode");l=localStorage.getItem("mobius-lang")}catch(e){}if(t!=="dark"&&t!=="light"){try{t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}catch(e){t="light"}}d.setAttribute("data-theme",t);if(l==="ar"||l==="ku"){d.setAttribute("data-lang",l);d.lang=l;d.dir="rtl";d.classList.add("i18n-wait");setTimeout(function(){d.classList.remove("i18n-wait")},2500)}})();</script>
+    <link rel="preload" href="../../assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../../assets/fonts/onest.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../../assets/css/style.css?v=23e223b0b5" />
+    <link rel="stylesheet" href="../../assets/css/academic.css?v=23e223b0b5" />
+    <script src="../../assets/js/scenes.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/i18n.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/data/search-index.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/site.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/lectures.js?v=23e223b0b5" defer></script>
+    <script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":".book, .bp-btn, [download], [target=_blank]"}}]},"eagerness":"moderate"}]}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="../../index.html" aria-label="Mobius home">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="8.5" fill="#f0b44a" /><ellipse cx="20" cy="20" rx="17" ry="5.6" fill="none" stroke="#f4efe4" stroke-opacity=".85" stroke-width="1.5" transform="rotate(-22 20 20)" /></svg>
+          <span class="brand-name">Mobius</span>
+          <span class="brand-ar" lang="ar">موبيوس</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="../../academic.html" aria-current="page">Academic</a>
+          <a href="../../pop-science.html">Pop Science</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <div class="subject-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span aria-hidden="true">/</span><a href="../../academic.html">Academic</a><span aria-hidden="true">/</span><a href="../thermodynamics.html">Thermodynamics &amp; Statistical Mechanics</a></nav>
+        <h1>Thermodynamics &amp; Statistical Mechanics</h1>
+        <p class="figure-cap">PV = Nk<sub>B</sub>T</p>
+      </div>
+      <div class="banner banner--compact" data-pointer data-hint>
+        <canvas data-anim="gas" aria-label="A gas in a box. Hover to heat it." role="img"></canvas>
+      </div>
+      <nav class="subject-tabs" aria-label="Thermodynamics &amp; Statistical Mechanics"><a class="subject-tab" href="../../physics/thermodynamics.html"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 9.5h9.5a3 3 0 0 1 3 3V39a3 3 0 0 0-3-3H9z"/><path d="M39 9.5h-9.5a3 3 0 0 0-3 3V39a3 3 0 0 1 3-3H39z"/><path d="M13 16h4.5M13 21h4.5M30.5 16H35M30.5 21H35"/></svg><span data-i18n>Books</span><span class="n">6</span></a><a class="subject-tab" href="lectures.html" aria-current="page"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6.5" y="10.5" width="35" height="23" rx="3"/><path d="m21 17 8 5-8 5z" class="fill"/><path d="M16 39.5h16M24 33.5v6"/></svg><span data-i18n>Lectures</span><span class="n">8</span></a></nav>
+
+      <div class="filters" data-filter-for="courses">
+        <div class="pills" role="group" aria-label="Show lectures by level"><button type="button" class="pill pill-all" data-level="" aria-pressed="true"><span class="planet" aria-hidden="true"></span><span class="label">All</span><span class="n">8</span></button><button type="button" class="pill lv-beginner" data-level="beginner" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Beginner</span><span class="n">1</span></button><button type="button" class="pill lv-easy" data-level="easy" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Easy</span><span class="n">1</span></button><button type="button" class="pill lv-medium" data-level="medium" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Medium</span><span class="n">2</span></button><button type="button" class="pill lv-hard" data-level="hard" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Hard</span><span class="n">2</span></button><button type="button" class="pill lv-extreme" data-level="extreme" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Extreme</span><span class="n">2</span></button></div>
+        <div class="seg" role="group" aria-label="Show lectures by approach"><button type="button" class="seg-btn" data-cat="" aria-pressed="true"><span data-i18n>All approaches</span></button><button type="button" class="seg-btn seg-academic" data-cat="academic" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span><span class="n">8</span></button></div>
+      </div>
+      <dl class="legend">
+        <div><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><dd data-i18n>Formal university courses: derivations, worked problems and exercises.</dd></div>
+        <div><span class="cat cat-conceptual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span></span><dd data-i18n>Visual, intuitive explanations that build understanding.</dd></div>
+      </dl>
+
+      <div class="lecture-shelves">
+        <section class="shelf lecture-shelf lv-beginner" data-group="beginner" aria-labelledby="lec-beginner">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-beginner">Beginner</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="beginner" data-cat="academic">
+              <a class="course lv-beginner" href="../../lectures/khan-academy-india-thermodynamics.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring is-on" cx="0" cy="90" r="39"/><circle class="cv-ring is-out" cx="0" cy="90" r="56"/><circle class="cv-ring is-out" cx="0" cy="90" r="73"/><circle class="cv-ring is-out" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="21.2" cy="57.3" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">21</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Thermodynamics</span>
+                  <span class="course-by">Khan Academy India - English</span>
+                  <span class="course-sum"><span data-l="en">Macrostates and microstates, the first law, PV diagrams and work, heat capacities and the Carnot cycle, with worked examples.</span><span data-l="ar" lang="ar" dir="rtl">الحالات الكبرى والحالات الصغرى، والقانون الأول، ومخططات الضغط والحجم والشغل، والسعات الحرارية ودورة كارنو، مع أمثلة محلولة.</span><span data-l="ku" lang="ku" dir="rtl">حالەتێن مەزن و بچووک، یاسایا ئێکێ، هێلکاریێن پاڵەپەستۆ و قەبارەیێ و کار، کاپاسیتیێن گەرمیێ و خولا کارنۆی، دگەل نموونەیێن چارەسەرکری.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">4.3</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-easy" data-group="easy" aria-labelledby="lec-easy">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-easy">Easy</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="easy" data-cat="academic">
+              <a class="course lv-easy" href="../../lectures/caltech-ph12c-statistical-mechanics.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring is-on" cx="0" cy="90" r="56"/><circle class="cv-ring is-out" cx="0" cy="90" r="73"/><circle class="cv-ring is-out" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="45.3" cy="57.1" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">20</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Physics 12c: Statistical Mechanics (Caltech)</span>
+                  <span class="course-by">John Preskill</span>
+                  <span class="course-sum"><span data-l="en">Caltech&#x27;s sophomore course: counting states, the Boltzmann factor, Planck&#x27;s law, the Gibbs distribution, Fermi and Bose gases, phase transitions and diffusion.</span><span data-l="ar" lang="ar" dir="rtl">مقرر السنة الثانية في كالتك: عدّ الحالات، وعامل بولتزمان، وقانون بلانك، وتوزيع غيبس، وغازات فيرمي وبوز، والتحولات الطورية والانتشار.</span><span data-l="ku" lang="ku" dir="rtl">کۆرسا سالا دووێ ل کالتێک: ژمارتنا حالەتان، فاکتەرێ بۆڵتزمانی، یاسایا پلانکی، دابەشبوونا گیبزی، گازێن فێرمی و بۆزی، گوهۆڕینێن قۆناغێ و بەلاڤبوون.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">29</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-medium" data-group="medium" aria-labelledby="lec-medium">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-medium">Medium</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="medium" data-cat="academic">
+              <a class="course lv-medium" href="../../lectures/mit-5-60-thermodynamics-and-kinetics.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring is-on" cx="0" cy="90" r="73"/><circle class="cv-ring is-out" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="40.8" cy="29.5" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">36</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 5.60 Thermodynamics &amp; Kinetics</span>
+                  <span class="course-by">Moungi Bawendi, Keith Nelson <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">The laws of thermodynamics, free energy and equilibrium, an introduction to statistical mechanics, and chemical kinetics.</span><span data-l="ar" lang="ar" dir="rtl">قوانين الديناميكا الحرارية، والطاقة الحرة والاتزان، ومدخل إلى الميكانيكا الإحصائية، والحركية الكيميائية.</span><span data-l="ku" lang="ku" dir="rtl">یاسایێن تێرمۆداینامیکێ، وزەیا ئازاد و هەڤسەنگی، دەستپێکەک بۆ میکانیکا ئاماری، و کینەتیکا کیمیایی.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">30</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="medium" data-cat="academic">
+              <a class="course lv-medium" href="../../lectures/stanford-modern-physics-statistical-mechanics.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring" cx="160" cy="90" r="56"/><circle class="cv-ring is-on" cx="160" cy="90" r="73"/><circle class="cv-ring is-out" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="107.5" cy="39.3" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">10</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Modern Physics: Statistical Mechanics</span>
+                  <span class="course-by">Leonard Susskind <span class="course-chan">· Stanford</span></span>
+                  <span class="course-sum"><span data-l="en">Entropy, temperature and the Boltzmann distribution derived from counting states, up to the partition function and phase transitions.</span><span data-l="ar" lang="ar" dir="rtl">الإنتروبيا ودرجة الحرارة وتوزيع بولتزمان مشتقّة من عدّ الحالات، وصولًا إلى دالة التجزئة والتحولات الطورية.</span><span data-l="ku" lang="ku" dir="rtl">ئێنترۆپی، پلەیا گەرمیێ و دابەشبوونا بۆڵتزمانی ژ ژمارتنا حالەتان دهێنە دەرئێخستن، هەتا فەنکشنا دابەشکرنێ و گوهۆڕینێن قۆناغێ.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">16</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-hard" data-group="hard" aria-labelledby="lec-hard">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-hard">Hard</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="hard" data-cat="academic">
+              <a class="course lv-hard" href="../../lectures/nptel-introduction-to-statistical-mechanics.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring" cx="0" cy="90" r="73"/><circle class="cv-ring is-on" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="57.9" cy="21.1" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">33</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Introduction to Statistical Mechanics (IIT Guwahati)</span>
+                  <span class="course-by">NPTEL IIT Guwahati</span>
+                  <span class="course-sum"><span data-l="en">From combinatorics and entropy through ensembles and quantum gases to mean-field theory, the renormalization group for the Ising model, and second quantization.</span><span data-l="ar" lang="ar" dir="rtl">من التوافيق والإنتروبيا مرورًا بالمجموعات الإحصائية والغازات الكمومية إلى نظرية المجال المتوسط وزمرة إعادة التطبيع لنموذج إيزنغ والتكميم الثاني.</span><span data-l="ku" lang="ku" dir="rtl">ژ لێکدان و ئێنترۆپیێ، ب ڕێکا کۆمێن ئاماری و گازێن کوانتەمی، هەتا تیۆریا مەیدانا ناڤنجی، گروپا نوی-ڕێکخستنێ بۆ مۆدێلێ ئایزینگی و کوانتیزەکرنا دووێ.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">21</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="hard" data-cat="academic">
+              <a class="course lv-hard" href="../../lectures/mit-2-43-advanced-thermodynamics.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring" cx="0" cy="90" r="73"/><circle class="cv-ring is-on" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="75.5" cy="41.0" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">25</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 2.43 Advanced Thermodynamics</span>
+                  <span class="course-by">Gian Paolo Beretta <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">A careful, axiomatic treatment of states, entropy and available energy, extended to mixtures, phase stability and non-equilibrium thermodynamics.</span><span data-l="ar" lang="ar" dir="rtl">معالجة مسلّماتية دقيقة للحالات والإنتروبيا والطاقة المتاحة، تمتد إلى المخاليط واستقرار الأطوار والديناميكا الحرارية خارج الاتزان.</span><span data-l="ku" lang="ku" dir="rtl">شرۆڤەیەکا ورد ل سەر بنیاتێ بنەمایان بۆ حالەتان، ئێنترۆپیێ و وزەیا بەردەست، هەتا تێکەلان، جێگیریا قۆناغان و تێرمۆداینامیکا دەرڤەی هەڤسەنگیێ.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">41</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-extreme" data-group="extreme" aria-labelledby="lec-extreme">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-extreme">Extreme</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="extreme" data-cat="academic">
+              <a class="course lv-extreme" href="../../lectures/mit-8-333-statistical-mechanics-1.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring" cx="0" cy="90" r="73"/><circle class="cv-ring" cx="0" cy="90" r="90"/><circle class="cv-ring is-on" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="53.5" cy="-2.7" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">26</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 8.333 Statistical Mechanics I</span>
+                  <span class="course-by">Mehran Kardar <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">MIT&#x27;s graduate course: thermodynamics, probability, kinetic theory, classical and quantum statistical mechanics of particles.</span><span data-l="ar" lang="ar" dir="rtl">مقرر الدراسات العليا في MIT: الديناميكا الحرارية، والاحتمال، والنظرية الحركية، والميكانيكا الإحصائية الكلاسيكية والكمومية للجسيمات.</span><span data-l="ku" lang="ku" dir="rtl">کۆرسا خواندنا بلند ل MIT: تێرمۆداینامیک، ئەگەر، تیۆریا کینەتیکی، و میکانیکا ئاماری یا کلاسیکی و کوانتەمی بۆ پارتیکلان.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">36</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="extreme" data-cat="academic">
+              <a class="course lv-extreme" href="../../lectures/mit-8-334-statistical-mechanics-2.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring" cx="160" cy="90" r="56"/><circle class="cv-ring" cx="160" cy="90" r="73"/><circle class="cv-ring" cx="160" cy="90" r="90"/><circle class="cv-ring is-on" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="83.0" cy="15.7" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">26</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 8.334 Statistical Mechanics II</span>
+                  <span class="course-by">Mehran Kardar <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">Statistical physics of fields: Landau–Ginzburg theory, scaling, the renormalization group and critical phenomena.</span><span data-l="ar" lang="ar" dir="rtl">الفيزياء الإحصائية للحقول: نظرية لانداو–غينزبرغ، والقياس، وزمرة إعادة التطبيع، والظواهر الحرجة.</span><span data-l="ku" lang="ku" dir="rtl">فیزیایا ئاماری یا مەیدانان: تیۆریا لانداو–گینزبێرگی، پیڤانکرن، گروپا نوی-ڕێکخستنێ و دیاردێن هەستیار.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">35</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <p class="filter-empty" hidden data-i18n>No lectures match these filters.</p>
+      <p class="source-note" data-i18n>Videos are hosted on YouTube and belong to their creators. Nothing is loaded from YouTube until you press play.</p>
+      <div class="page-end"></div>
+    </main>
+        <footer class="site-footer">
+          <div class="wrap">
+            <div class="footer-grid">
+              <p class="footer-about">
+                <strong>Mobius <span lang="ar">موبيوس</span></strong>
+                A free library for physics and maths students: trusted books and
+                full lecture courses, each placed on five levels from Beginner to
+                Extreme.
+              </p>
+              <div>
+                <h2 id="footer-credits" style="font-weight: 900">Credits:</h2>
+                <dl class="credits" aria-labelledby="footer-credits">
+                  <div>
+                    <dt>Founder &amp; Designer</dt>
+                    <a href="https://www.instagram.com/____wasser____/" rel="noopener" target="_blank">@ZHEHAT</a>
+                  </div>
+                  <div>
+                    <dt>Developer</dt>
+                    <a href="https://www.instagram.com/_.ramn.__/" rel="noopener" target="_blank">@RAMN</a>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="footer-base">
+              <p>&copy; 2026 Mobius</p>
+              <nav class="footer-legal" aria-label="Legal">
+                <a href="../../feedback.html">Feedback</a>
+                <a href="../../privacy.html">Privacy</a>
+                <a href="../../terms.html">Terms</a>
+                <a href="https://www.instagram.com/mobius.sci/" rel="noopener" target="_blank">Instagram</a>
+              </nav>
+              <p>Book covers belong to their publishers. Videos belong to their creators.</p>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Group Theory | Lectures | Mobius</title>
+    <meta name="description" content="Complete Group Theory lecture courses and visual series, sorted from Beginner to Extreme, with a player built in." />
+    <link rel="canonical" href="https://mobius-physics.pages.dev/academic/group-theory/lectures" />
+    <meta property="og:title" content="Group Theory | Lectures | Mobius" />
+    <meta property="og:description" content="Complete Group Theory lecture courses and visual series, sorted from Beginner to Extreme, with a player built in." />
+    <meta property="og:image" content="https://mobius-physics.pages.dev/assets/img/og-cover.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mobius-physics.pages.dev/academic/group-theory/lectures" />
+    <meta property="og:site_name" content="Mobius | موبيوس" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#d5b06a" />
+    <link rel="icon" href="../../assets/img/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="../../site.webmanifest" />
+    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("mobius-mode");l=localStorage.getItem("mobius-lang")}catch(e){}if(t!=="dark"&&t!=="light"){try{t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}catch(e){t="light"}}d.setAttribute("data-theme",t);if(l==="ar"||l==="ku"){d.setAttribute("data-lang",l);d.lang=l;d.dir="rtl";d.classList.add("i18n-wait");setTimeout(function(){d.classList.remove("i18n-wait")},2500)}})();</script>
+    <link rel="preload" href="../../assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../../assets/fonts/onest.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../../assets/css/style.css?v=23e223b0b5" />
+    <link rel="stylesheet" href="../../assets/css/academic.css?v=23e223b0b5" />
+    <script src="../../assets/js/scenes.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/i18n.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/data/search-index.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/site.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/lectures.js?v=23e223b0b5" defer></script>
+    <script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":".book, .bp-btn, [download], [target=_blank]"}}]},"eagerness":"moderate"}]}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="../../index.html" aria-label="Mobius home">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="8.5" fill="#f0b44a" /><ellipse cx="20" cy="20" rx="17" ry="5.6" fill="none" stroke="#f4efe4" stroke-opacity=".85" stroke-width="1.5" transform="rotate(-22 20 20)" /></svg>
+          <span class="brand-name">Mobius</span>
+          <span class="brand-ar" lang="ar">موبيوس</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="../../academic.html" aria-current="page">Academic</a>
+          <a href="../../pop-science.html">Pop Science</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <div class="subject-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span aria-hidden="true">/</span><a href="../../academic.html">Academic</a><span aria-hidden="true">/</span><a href="../group-theory.html">Group Theory</a></nav>
+        <h1>Group Theory</h1>
+        <p class="figure-cap">D<sub>6</sub>, order 12</p>
+      </div>
+      <div class="banner banner--compact" data-pointer data-hint>
+        <canvas data-anim="symmetry" aria-label="The twelve symmetries of a hexagon." role="img"></canvas>
+      </div>
+      <nav class="subject-tabs" aria-label="Group Theory"><a class="subject-tab" href="../../math/group-theory.html"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 9.5h9.5a3 3 0 0 1 3 3V39a3 3 0 0 0-3-3H9z"/><path d="M39 9.5h-9.5a3 3 0 0 0-3 3V39a3 3 0 0 1 3-3H39z"/><path d="M13 16h4.5M13 21h4.5M30.5 16H35M30.5 21H35"/></svg><span data-i18n>Books</span><span class="n">6</span></a><a class="subject-tab" href="lectures.html" aria-current="page"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6.5" y="10.5" width="35" height="23" rx="3"/><path d="m21 17 8 5-8 5z" class="fill"/><path d="M16 39.5h16M24 33.5v6"/></svg><span data-i18n>Lectures</span><span class="n">4</span></a></nav>
+
+      <div class="filters" data-filter-for="courses">
+        <div class="pills" role="group" aria-label="Show lectures by level"><button type="button" class="pill pill-all" data-level="" aria-pressed="true"><span class="planet" aria-hidden="true"></span><span class="label">All</span><span class="n">4</span></button><button type="button" class="pill lv-easy" data-level="easy" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Easy</span><span class="n">1</span></button><button type="button" class="pill lv-medium" data-level="medium" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Medium</span><span class="n">1</span></button><button type="button" class="pill lv-hard" data-level="hard" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Hard</span><span class="n">2</span></button></div>
+        <div class="seg" role="group" aria-label="Show lectures by approach"><button type="button" class="seg-btn" data-cat="" aria-pressed="true"><span data-i18n>All approaches</span></button><button type="button" class="seg-btn seg-academic" data-cat="academic" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span><span class="n">3</span></button><button type="button" class="seg-btn seg-conceptual" data-cat="conceptual" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span><span class="n">1</span></button></div>
+      </div>
+      <dl class="legend">
+        <div><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><dd data-i18n>Formal university courses: derivations, worked problems and exercises.</dd></div>
+        <div><span class="cat cat-conceptual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span></span><dd data-i18n>Visual, intuitive explanations that build understanding.</dd></div>
+      </dl>
+
+      <div class="lecture-shelves">
+        <section class="shelf lecture-shelf lv-easy" data-group="easy" aria-labelledby="lec-easy">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-easy">Easy</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="easy" data-cat="conceptual">
+              <a class="course lv-easy" href="../../lectures/socratica-abstract-algebra.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring is-on" cx="160" cy="90" r="56"/><circle class="cv-ring is-out" cx="160" cy="90" r="73"/><circle class="cv-ring is-out" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="119.7" cy="51.1" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">33</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Abstract Algebra</span>
+                  <span class="course-by">Socratica</span>
+                  <span class="course-sum"><span data-l="en">Short, clear introductions to groups, subgroups, cosets, homomorphisms, rings and fields.</span><span data-l="ar" lang="ar" dir="rtl">مقدمات قصيرة وواضحة عن الزمر، والزمر الجزئية، والمجموعات المشاركة، والتشاكلات، والحلقات، والحقول.</span><span data-l="ku" lang="ku" dir="rtl">دەستپێکێن کورت و ڕوون ل سەر گروپ، ژێرگروپ، کۆسێت، هۆمۆمۆرفیزم، ئەلقە و مەیدانان.</span></span>
+                  <span class="course-badges"><span class="cat cat-conceptual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span></span><span class="course-len"><span class="n">3.5</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-medium" data-group="medium" aria-labelledby="lec-medium">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-medium">Medium</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="medium" data-cat="academic">
+              <a class="course lv-medium" href="../../lectures/macauley-visual-group-theory.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring is-on" cx="0" cy="90" r="73"/><circle class="cv-ring is-out" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="37.6" cy="27.4" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">43</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Visual Group Theory</span>
+                  <span class="course-by">Matthew Macauley <span class="course-chan">· Professor Macauley</span></span>
+                  <span class="course-sum"><span data-l="en">Clemson&#x27;s undergraduate abstract algebra course taught through Cayley graphs and pictures: groups, quotients, actions, the Sylow theorems and Galois theory.</span><span data-l="ar" lang="ar" dir="rtl">مقرر الجبر المجرد الجامعي في كليمسون، يُدرَّس بمخططات كايلي والصور: الزمر، وزمر القسمة، والأفعال، ومبرهنات سيلو، ونظرية غالوا.</span><span data-l="ku" lang="ku" dir="rtl">کۆرسا جەبرا ئەبستراکت ل زانکۆیا کلێمسن ب هێلکاریێن کەیلی و وێنەیان: گروپ، گروپێن پشکی، کار، تیۆرەمێن سیلۆی و تیۆریا گالوای.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">21</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-hard" data-group="hard" aria-labelledby="lec-hard">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-hard">Hard</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="hard" data-cat="academic">
+              <a class="course lv-hard" href="../../lectures/borcherds-group-theory.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring" cx="160" cy="90" r="56"/><circle class="cv-ring" cx="160" cy="90" r="73"/><circle class="cv-ring is-on" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="75.4" cy="59.2" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">32</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Group Theory</span>
+                  <span class="course-by">Richard Borcherds <span class="course-chan">· Richard E Borcherds</span></span>
+                  <span class="course-sum"><span data-l="en">A graduate course by a Fields medallist: Lagrange&#x27;s and Sylow&#x27;s theorems, semidirect products, p-groups, nilpotent groups and groups of small order.</span><span data-l="ar" lang="ar" dir="rtl">مقرر دراسات عليا يقدّمه حائز على وسام فيلدز: مبرهنتا لاغرانج وسيلو، والجداءات شبه المباشرة، وزمر p، والزمر عديمة القوى، والزمر ذات الرتب الصغيرة.</span><span data-l="ku" lang="ku" dir="rtl">کۆرسەکا خواندنا بلند ژ لایێ خەلاتگرەکێ مەدالیا فیڵدزی: تیۆرەمێن لاگرانژ و سیلۆی، لێکدانێن نیمچە-ڕاستەوخۆ، گروپێن p، گروپێن نیلپۆتێنت و گروپێن ب ڕیزا بچووک.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">12</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="hard" data-cat="academic">
+              <a class="course lv-hard" href="../../lectures/nptel-group-theory-methods-in-physics.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring" cx="160" cy="90" r="56"/><circle class="cv-ring" cx="160" cy="90" r="73"/><circle class="cv-ring is-on" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="122.0" cy="8.4" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">60</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Group Theory Methods in Physics (IIT Bombay)</span>
+                  <span class="course-by">NPTEL IIT Bombay</span>
+                  <span class="course-sum"><span data-l="en">Finite groups and molecular symmetry, representations and characters, Lie groups and algebras, and applications such as the hydrogen spectrum.</span><span data-l="ar" lang="ar" dir="rtl">الزمر المنتهية وتناظر الجزيئات، والتمثيلات والمميّزات، وزمر لي وجبورها، وتطبيقات منها طيف الهيدروجين.</span><span data-l="ku" lang="ku" dir="rtl">گروپێن سنووردار و سیمەتریا مۆلیکولان، نوێنەرایەتی و کاراکتەر، گروپ و جەبرێن لی، و بکارئینانێن وەک سپێکترا هایدرۆجینێ.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">28</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <p class="filter-empty" hidden data-i18n>No lectures match these filters.</p>
+      <p class="source-note" data-i18n>Videos are hosted on YouTube and belong to their creators. Nothing is loaded from YouTube until you press play.</p>
+      <div class="page-end"></div>
+    </main>
+        <footer class="site-footer">
+          <div class="wrap">
+            <div class="footer-grid">
+              <p class="footer-about">
+                <strong>Mobius <span lang="ar">موبيوس</span></strong>
+                A free library for physics and maths students: trusted books and
+                full lecture courses, each placed on five levels from Beginner to
+                Extreme.
+              </p>
+              <div>
+                <h2 id="footer-credits" style="font-weight: 900">Credits:</h2>
+                <dl class="credits" aria-labelledby="footer-credits">
+                  <div>
+                    <dt>Founder &amp; Designer</dt>
+                    <a href="https://www.instagram.com/____wasser____/" rel="noopener" target="_blank">@ZHEHAT</a>
+                  </div>
+                  <div>
+                    <dt>Developer</dt>
+                    <a href="https://www.instagram.com/_.ramn.__/" rel="noopener" target="_blank">@RAMN</a>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="footer-base">
+              <p>&copy; 2026 Mobius</p>
+              <nav class="footer-legal" aria-label="Legal">
+                <a href="../../feedback.html">Feedback</a>
+                <a href="../../privacy.html">Privacy</a>
+                <a href="../../terms.html">Terms</a>
+                <a href="https://www.instagram.com/mobius.sci/" rel="noopener" target="_blank">Instagram</a>
+              </nav>
+              <p>Book covers belong to their publishers. Videos belong to their creators.</p>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Linear Algebra | Lectures | Mobius</title>
+    <meta name="description" content="Complete Linear Algebra lecture courses and visual series, sorted from Beginner to Extreme, with a player built in." />
+    <link rel="canonical" href="https://mobius-physics.pages.dev/academic/linear-algebra/lectures" />
+    <meta property="og:title" content="Linear Algebra | Lectures | Mobius" />
+    <meta property="og:description" content="Complete Linear Algebra lecture courses and visual series, sorted from Beginner to Extreme, with a player built in." />
+    <meta property="og:image" content="https://mobius-physics.pages.dev/assets/img/og-cover.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mobius-physics.pages.dev/academic/linear-algebra/lectures" />
+    <meta property="og:site_name" content="Mobius | موبيوس" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#d5b06a" />
+    <link rel="icon" href="../../assets/img/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="../../site.webmanifest" />
+    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("mobius-mode");l=localStorage.getItem("mobius-lang")}catch(e){}if(t!=="dark"&&t!=="light"){try{t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}catch(e){t="light"}}d.setAttribute("data-theme",t);if(l==="ar"||l==="ku"){d.setAttribute("data-lang",l);d.lang=l;d.dir="rtl";d.classList.add("i18n-wait");setTimeout(function(){d.classList.remove("i18n-wait")},2500)}})();</script>
+    <link rel="preload" href="../../assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../../assets/fonts/onest.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../../assets/css/style.css?v=23e223b0b5" />
+    <link rel="stylesheet" href="../../assets/css/academic.css?v=23e223b0b5" />
+    <script src="../../assets/js/scenes.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/i18n.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/data/search-index.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/site.js?v=23e223b0b5" defer></script>
+    <script src="../../assets/js/lectures.js?v=23e223b0b5" defer></script>
+    <script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":".book, .bp-btn, [download], [target=_blank]"}}]},"eagerness":"moderate"}]}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="../../index.html" aria-label="Mobius home">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="8.5" fill="#f0b44a" /><ellipse cx="20" cy="20" rx="17" ry="5.6" fill="none" stroke="#f4efe4" stroke-opacity=".85" stroke-width="1.5" transform="rotate(-22 20 20)" /></svg>
+          <span class="brand-name">Mobius</span>
+          <span class="brand-ar" lang="ar">موبيوس</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="../../academic.html" aria-current="page">Academic</a>
+          <a href="../../pop-science.html">Pop Science</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <div class="subject-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a><span aria-hidden="true">/</span><a href="../../academic.html">Academic</a><span aria-hidden="true">/</span><a href="../linear-algebra.html">Linear Algebra</a></nav>
+        <h1>Linear Algebra</h1>
+        <p class="figure-cap">T(x) = Ax</p>
+      </div>
+      <div class="banner banner--compact" data-pointer data-hint>
+        <canvas data-anim="matrix" aria-label="A grid under a linear map. Drag it." role="img"></canvas>
+      </div>
+      <nav class="subject-tabs" aria-label="Linear Algebra"><a class="subject-tab" href="../../math/linear-algebra.html"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 9.5h9.5a3 3 0 0 1 3 3V39a3 3 0 0 0-3-3H9z"/><path d="M39 9.5h-9.5a3 3 0 0 0-3 3V39a3 3 0 0 1 3-3H39z"/><path d="M13 16h4.5M13 21h4.5M30.5 16H35M30.5 21H35"/></svg><span data-i18n>Books</span><span class="n">5</span></a><a class="subject-tab" href="lectures.html" aria-current="page"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6.5" y="10.5" width="35" height="23" rx="3"/><path d="m21 17 8 5-8 5z" class="fill"/><path d="M16 39.5h16M24 33.5v6"/></svg><span data-i18n>Lectures</span><span class="n">6</span></a></nav>
+
+      <div class="filters" data-filter-for="courses">
+        <div class="pills" role="group" aria-label="Show lectures by level"><button type="button" class="pill pill-all" data-level="" aria-pressed="true"><span class="planet" aria-hidden="true"></span><span class="label">All</span><span class="n">6</span></button><button type="button" class="pill lv-beginner" data-level="beginner" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Beginner</span><span class="n">1</span></button><button type="button" class="pill lv-easy" data-level="easy" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Easy</span><span class="n">2</span></button><button type="button" class="pill lv-medium" data-level="medium" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Medium</span><span class="n">1</span></button><button type="button" class="pill lv-hard" data-level="hard" aria-pressed="false"><span class="planet" aria-hidden="true"></span><span class="label">Hard</span><span class="n">2</span></button></div>
+        <div class="seg" role="group" aria-label="Show lectures by approach"><button type="button" class="seg-btn" data-cat="" aria-pressed="true"><span data-i18n>All approaches</span></button><button type="button" class="seg-btn seg-academic" data-cat="academic" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span><span class="n">4</span></button><button type="button" class="seg-btn seg-conceptual" data-cat="conceptual" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span><span class="n">2</span></button></div>
+      </div>
+      <dl class="legend">
+        <div><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><dd data-i18n>Formal university courses: derivations, worked problems and exercises.</dd></div>
+        <div><span class="cat cat-conceptual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span></span><dd data-i18n>Visual, intuitive explanations that build understanding.</dd></div>
+      </dl>
+
+      <div class="lecture-shelves">
+        <section class="shelf lecture-shelf lv-beginner" data-group="beginner" aria-labelledby="lec-beginner">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-beginner">Beginner</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="beginner" data-cat="conceptual">
+              <a class="course lv-beginner" href="../../lectures/3blue1brown-essence-of-linear-algebra.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring is-on" cx="160" cy="90" r="39"/><circle class="cv-ring is-out" cx="160" cy="90" r="56"/><circle class="cv-ring is-out" cx="160" cy="90" r="73"/><circle class="cv-ring is-out" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="139.9" cy="56.6" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">16</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Essence of Linear Algebra</span>
+                  <span class="course-by">Grant Sanderson <span class="course-chan">· 3Blue1Brown</span></span>
+                  <span class="course-sum"><span data-l="en">Vectors, linear maps, determinants, eigenvectors and abstract vector spaces, all seen geometrically.</span><span data-l="ar" lang="ar" dir="rtl">المتجهات، والتحويلات الخطية، والمحددات، والمتجهات الذاتية، وفضاءات المتجهات المجردة، كلها بنظرة هندسية.</span><span data-l="ku" lang="ku" dir="rtl">ڤێکتەر، نەخشێن هێلی، دیتەرمینانت، ڤێکتەرێن تایبەت و فەزایێن ڤێکتەری یێن ئەبستراکت، هەمی ب چاڤەکێ ئەندازەیی.</span></span>
+                  <span class="course-badges"><span class="cat cat-conceptual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span></span><span class="course-len"><span class="n">3</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-easy" data-group="easy" aria-labelledby="lec-easy">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-easy">Easy</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="easy" data-cat="academic">
+              <a class="course lv-easy" href="../../lectures/trefor-bazett-linear-algebra.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring is-on" cx="0" cy="90" r="56"/><circle class="cv-ring is-out" cx="0" cy="90" r="73"/><circle class="cv-ring is-out" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="52.3" cy="69.9" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">84</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Linear Algebra (Full Course)</span>
+                  <span class="course-by">Trefor Bazett <span class="course-chan">· Dr. Trefor Bazett</span></span>
+                  <span class="course-sum"><span data-l="en">A one-semester introductory course balancing understanding and technique: systems, matrices, subspaces, determinants and eigenvalues.</span><span data-l="ar" lang="ar" dir="rtl">مقرر تمهيدي لفصل دراسي واحد يوازن بين الفهم والتقنية: الأنظمة الخطية، والمصفوفات، والفضاءات الجزئية، والمحددات، والقيم الذاتية.</span><span data-l="ku" lang="ku" dir="rtl">کۆرسەکا دەستپێکێ بۆ وەرزەکی، هەڤسەنگ د ناڤبەرا تێگەهشتن و تەکنیکێ دا: سیستەمێن هەڤکێشەیان، ماتریکس، ژێرفەزا، دیتەرمینانت و نرخێن تایبەت.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">11</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="easy" data-cat="conceptual">
+              <a class="course lv-easy" href="../../lectures/mit-a-vision-of-linear-algebra.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="160" cy="90" r="11"/><circle class="cv-ring" cx="160" cy="90" r="39"/><circle class="cv-ring is-on" cx="160" cy="90" r="56"/><circle class="cv-ring is-out" cx="160" cy="90" r="73"/><circle class="cv-ring is-out" cx="160" cy="90" r="90"/><circle class="cv-ring is-out" cx="160" cy="90" r="107"/><circle class="cv-planet" cx="132.9" cy="41.0" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">10</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">A Vision of Linear Algebra</span>
+                  <span class="course-by">Gilbert Strang <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">Strang&#x27;s short overview of the whole subject through the column space and the four fundamental subspaces.</span><span data-l="ar" lang="ar" dir="rtl">نظرة عامة قصيرة من سترانغ على المادة كلها عبر فضاء الأعمدة والفضاءات الجزئية الأساسية الأربعة.</span><span data-l="ku" lang="ku" dir="rtl">بەرچاڤەکا کورت ژ ستراینگی ل سەر هەمی بابەتی ب ڕێکا فەزایا ستوونان و چار ژێرفەزایێن بنەڕەتی.</span></span>
+                  <span class="course-badges"><span class="cat cat-conceptual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg><span data-i18n>Conceptual learning</span></span><span class="course-len"><span class="n">3.7</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-medium" data-group="medium" aria-labelledby="lec-medium">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-medium">Medium</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="medium" data-cat="academic">
+              <a class="course lv-medium" href="../../lectures/mit-18-06-linear-algebra.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring is-on" cx="0" cy="90" r="73"/><circle class="cv-ring is-out" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="51.6" cy="38.4" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">36</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 18.06 Linear Algebra</span>
+                  <span class="course-by">Gilbert Strang <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">The classic course: elimination, the four subspaces, orthogonality, determinants, eigenvalues and positive definite matrices.</span><span data-l="ar" lang="ar" dir="rtl">المقرر الكلاسيكي: الحذف، والفضاءات الجزئية الأربعة، والتعامد، والمحددات، والقيم الذاتية، والمصفوفات الموجبة التعريف.</span><span data-l="ku" lang="ku" dir="rtl">کۆرسا کلاسیکی: لابردن، چار ژێرفەزا، ستوونی، دیتەرمینانت، نرخێن تایبەت و ماتریکسێن ئەرێنی-دیارکری.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">28</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="shelf lecture-shelf lv-hard" data-group="hard" aria-labelledby="lec-hard">
+          <div class="shelf-head"><span class="planet" aria-hidden="true"></span><h2 id="lec-hard">Hard</h2></div>
+          <ul class="courses">
+            <li class="course-item" data-level="hard" data-cat="academic">
+              <a class="course lv-hard" href="../../lectures/axler-linear-algebra-done-right.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring" cx="0" cy="90" r="73"/><circle class="cv-ring is-on" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="56.6" cy="20.1" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">50</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">Linear Algebra Done Right</span>
+                  <span class="course-by">Sheldon Axler</span>
+                  <span class="course-sum"><span data-l="en">The author&#x27;s own video course for his proof-based textbook: vector spaces, linear maps, eigenvalues, inner products and operators.</span><span data-l="ar" lang="ar" dir="rtl">مقرر الفيديو الذي أعدّه المؤلف بنفسه لكتابه القائم على البراهين: فضاءات المتجهات، والتحويلات الخطية، والقيم الذاتية، والجداء الداخلي، والمؤثرات.</span><span data-l="ku" lang="ku" dir="rtl">کۆرسا ڤیدیۆیی یا نڤیسەری ب خۆ بۆ پەرتووکا وی یا ل سەر سەلماندنان: فەزایێن ڤێکتەری، نەخشێن هێلی، نرخێن تایبەت، لێکدانا ناڤخۆیی و ئۆپەراتۆر.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">10</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+            <li class="course-item" data-level="hard" data-cat="academic">
+              <a class="course lv-hard" href="../../lectures/mit-18-065-matrix-methods.html">
+                <span class="course-cover"><svg class="cv-art" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle class="cv-sun" cx="0" cy="90" r="11"/><circle class="cv-ring" cx="0" cy="90" r="39"/><circle class="cv-ring" cx="0" cy="90" r="56"/><circle class="cv-ring" cx="0" cy="90" r="73"/><circle class="cv-ring is-on" cx="0" cy="90" r="90"/><circle class="cv-ring is-out" cx="0" cy="90" r="107"/><circle class="cv-planet" cx="65.8" cy="28.6" r="5"/></svg><span class="course-count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span class="n">36</span> <span data-i18n>videos</span></span></span>
+                <span class="course-body">
+                  <span class="course-title">MIT 18.065 Matrix Methods in Data Analysis, Signal Processing, and Machine Learning</span>
+                  <span class="course-by">Gilbert Strang <span class="course-chan">· MIT OpenCourseWare</span></span>
+                  <span class="course-sum"><span data-l="en">The singular value decomposition, low-rank approximation, optimization and the linear algebra of deep learning.</span><span data-l="ar" lang="ar" dir="rtl">تحليل القيمة المنفردة، والتقريب بمرتبة منخفضة، والتحسين، والجبر الخطي للتعلّم العميق.</span><span data-l="ku" lang="ku" dir="rtl">شیکردنا نرخێن تاک (SVD)، نێزیککرنا ب ڕیزا کێم، باشترکرن و جەبرا هێلی یا فێربوونا کویر.</span></span>
+                  <span class="course-badges"><span class="cat cat-academic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v4.6c1.6 1.5 3.4 2.2 5.5 2.2s3.9-.7 5.5-2.2V11M21.5 9v5.5"/></svg><span data-i18n>Academic lecture</span></span><span class="course-len"><span class="n">28</span> <span data-i18n>h</span></span></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <p class="filter-empty" hidden data-i18n>No lectures match these filters.</p>
+      <p class="source-note" data-i18n>Videos are hosted on YouTube and belong to their creators. Nothing is loaded from YouTube until you press play.</p>
+      <div class="page-end"></div>
+    </main>
+        <footer class="site-footer">
+          <div class="wrap">
+            <div class="footer-grid">
+              <p class="footer-about">
+                <strong>Mobius <span lang="ar">موبيوس</span></strong>
+                A free library for physics and maths students: trusted books and
+                full lecture courses, each placed on five levels from Beginner to
+                Extreme.
+              </p>
+              <div>
+                <h2 id="footer-credits" style="font-weight: 900">Credits:</h2>
+                <dl class="credits" aria-labelledby="footer-credits">
+                  <div>
+                    <dt>Founder &amp; Designer</dt>
+                    <a href="https://www.instagram.com/____wasser____/" rel="noopener" target="_blank">@ZHEHAT</a>
+                  </div>
+                  <div>
+                    <dt>Developer</dt>
+                    <a href="https://www.instagram.com/_.ramn.__/" rel="noopener" target="_blank">@RAMN</a>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="footer-base">
+              <p>&copy; 2026 Mobius</p>
+              <nav class="footer-legal" aria-label="Legal">
+                <a href="../../feedback.html">Feedback</a>
+                <a href="../../privacy.html">Privacy</a>
+                <a href="../../terms.html">Terms</a>
+                <a href="https://www.instagram.com/mobius.sci/" rel="noopener" target="_blank">Instagram</a>
+              </nav>
+              <p>Book covers belong to their publishers. Videos belong to their creators.</p>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>

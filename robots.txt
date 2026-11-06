@@ -1,0 +1,5 @@
+# Every page of Mobius may be shown in search results.
+User-agent: *
+Allow: /
+
+Sitemap: https://mobius-physics.pages.dev/sitemap.xml

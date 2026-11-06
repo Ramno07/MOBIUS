@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedback | Mobius</title>
+    <meta name="description" content="Send Mobius a comment, report a problem, or suggest a book or a lecture course." />
+    <link rel="canonical" href="https://mobius-physics.pages.dev/feedback" />
+    <meta property="og:title" content="Feedback | Mobius" />
+    <meta property="og:description" content="Send Mobius a comment, report a problem, or suggest a book or a lecture course." />
+    <meta property="og:image" content="https://mobius-physics.pages.dev/assets/img/og-cover.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mobius-physics.pages.dev/feedback" />
+    <meta property="og:site_name" content="Mobius | موبيوس" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#d5b06a" />
+    <link rel="icon" href="assets/img/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("mobius-mode");l=localStorage.getItem("mobius-lang")}catch(e){}if(t!=="dark"&&t!=="light"){try{t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}catch(e){t="light"}}d.setAttribute("data-theme",t);if(l==="ar"||l==="ku"){d.setAttribute("data-lang",l);d.lang=l;d.dir="rtl";d.classList.add("i18n-wait");setTimeout(function(){d.classList.remove("i18n-wait")},2500)}})();</script>
+    <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/onest.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/style.css?v=23e223b0b5" />
+    <script src="assets/js/scenes.js?v=23e223b0b5" defer></script>
+    <script src="assets/js/i18n.js?v=23e223b0b5" defer></script>
+    <script src="assets/data/search-index.js?v=23e223b0b5" defer></script>
+    <script src="assets/js/site.js?v=23e223b0b5" defer></script>
+    <script src="assets/js/feedback.js?v=23e223b0b5" defer></script>
+    <script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":".book, .bp-btn, [download], [target=_blank]"}}]},"eagerness":"moderate"}]}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Mobius home">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="8.5" fill="#f0b44a" /><ellipse cx="20" cy="20" rx="17" ry="5.6" fill="none" stroke="#f4efe4" stroke-opacity=".85" stroke-width="1.5" transform="rotate(-22 20 20)" /></svg>
+          <span class="brand-name">Mobius</span>
+          <span class="brand-ar" lang="ar">موبيوس</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="academic.html">Academic</a>
+          <a href="pop-science.html">Pop Science</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <div class="page-top">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Feedback</span></nav>
+        <h1 class="page-title" data-i18n>Feedback</h1>
+        <p class="page-sub" data-i18n>Tell us what you think, report a problem, or suggest a book or a course. We read every message.</p>
+      </div>
+      <form class="feedback" novalidate>
+        <fieldset class="fb-topics">
+          <legend data-i18n>What is it about?</legend>
+          <div class="fb-topic-row"><label class="fb-topic"><input type="radio" name="topic" value="0" checked><span data-i18n>A comment</span></label><label class="fb-topic"><input type="radio" name="topic" value="1"><span data-i18n>A problem on the site</span></label><label class="fb-topic"><input type="radio" name="topic" value="2"><span data-i18n>Suggest a book</span></label><label class="fb-topic"><input type="radio" name="topic" value="3"><span data-i18n>Suggest a course</span></label><label class="fb-topic"><input type="radio" name="topic" value="4"><span data-i18n>Something else</span></label></div>
+        </fieldset>
+        <label class="fb-label" for="fb-msg" data-i18n>Your message</label>
+        <textarea id="fb-msg" name="message" rows="7" maxlength="1500" required></textarea>
+        <p class="fb-error" role="alert" hidden data-i18n>Write a message first.</p>
+        <label class="fb-label" for="fb-name"><span data-i18n>Your name</span> <span class="fb-optional" data-i18n>(optional)</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="80" autocomplete="name">
+        <button type="submit" class="fb-send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><span data-i18n>Continue in your email app</span></button>
+        <p class="fb-how"><span data-i18n>This opens your email app with your message ready to send to</span> <a class="fb-mail" data-u="zawiya.physics" data-d="gmail.com">zawiya.physics [at] gmail.com</a></p>
+        <p class="fb-copy-row"><button type="button" class="fb-copy" hidden><span data-i18n>Copy the address</span></button> <span class="fb-copied" role="status"></span></p>
+      </form>
+      <div class="page-end"></div>
+    </main>
+        <footer class="site-footer">
+          <div class="wrap">
+            <div class="footer-grid">
+              <p class="footer-about">
+                <strong>Mobius <span lang="ar">موبيوس</span></strong>
+                A free library for physics and maths students: trusted books and
+                full lecture courses, each placed on five levels from Beginner to
+                Extreme.
+              </p>
+              <div>
+                <h2 id="footer-credits" style="font-weight: 900">Credits:</h2>
+                <dl class="credits" aria-labelledby="footer-credits">
+                  <div>
+                    <dt>Founder &amp; Designer</dt>
+                    <a href="https://www.instagram.com/____wasser____/" rel="noopener" target="_blank">@ZHEHAT</a>
+                  </div>
+                  <div>
+                    <dt>Developer</dt>
+                    <a href="https://www.instagram.com/_.ramn.__/" rel="noopener" target="_blank">@RAMN</a>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="footer-base">
+              <p>&copy; 2026 Mobius</p>
+              <nav class="footer-legal" aria-label="Legal">
+                <a href="feedback.html">Feedback</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="https://www.instagram.com/mobius.sci/" rel="noopener" target="_blank">Instagram</a>
+              </nav>
+              <p>Book covers belong to their publishers. Videos belong to their creators.</p>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>

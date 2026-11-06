@@ -1,0 +1,15 @@
+{
+  "name": "Mobius | موبيوس",
+  "short_name": "Mobius",
+  "description": "Free physics and maths books, each placed on a level from Beginner to Extreme.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#1e2335",
+  "theme_color": "#100d2c",
+  "icons": [
+    { "src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
